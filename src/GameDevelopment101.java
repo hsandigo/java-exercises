@@ -4,15 +4,23 @@ import java.util.Scanner;
 
 public class GameDevelopment101 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        int Random = (int) Math.floor(Math.random() * 101);
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+
         System.out.println("Guess the number we chose :)");
-//        Integer input = sc.nextInt();
+        int random = (int) Math.floor(Math.random() * 101);
+        int guess = input.nextInt();
 
-        if(input <= 0 || input > 100){
-            System.out.println("The input is not valid");
+        while (guess != random) {
+            System.out.println("Keep guessing!");
+//            guess = scanner.nextInt();
+        }if (guess > random){
+            System.out.println("Lower");
+        }else if (guess < random){
+            System.out.println("Higher");
+        }else{
+            System.out.println("GOOD GUESS!");
         }
-
+        input.close();
     }
 }
