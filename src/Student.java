@@ -15,12 +15,6 @@ public class Student {
         this.lastName = lastName;
         this.score = score;
 
-//        Map studentInfo = new HashMap();
-//        Student(String firstName, String lastName, int score){
-//            this.studentInfo.put("firstName", firstName);
-//            this.studentInfo.put("lastName", lastName);
         }
 
     }
-
-}

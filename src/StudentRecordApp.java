@@ -2,7 +2,6 @@
  * Created by humbertosandigo on 11/28/16.
  */
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class StudentRecordApp {
@@ -19,24 +18,28 @@ public class StudentRecordApp {
 
         System.out.println("Welcome to the Student Records Application");
 
-        System.out.println("Please input the student's first name: ");
+        Student newStudent = new Student(firstName, lastName, score); // how you make an object based off of this class
+
+        System.out.println(newStudent);
+
+        // make an arrayList where each element on the list is a Student object
+        ArrayList<Student> students = new ArrayList<>();
+
+        // create the student object
+        System.out.print("Please input the student's first name: ");
         firstName = sc.nextLine();
 
-        System.out.println("Please input the student's last name: ");
+        System.out.print("Please input the student's last name: ");
         lastName = sc.nextLine();
 
         System.out.println("Please input that student's score: ");
         score = sc.nextInt();
 
-        Student newStudent = new Student(firstName, lastName, score); // how you make an object based off of this class
+// create a new student object to hold the data for a single student.
+        Student newStudent = new Student(firstName, lastName, score);
 
-        System.out.println(newStudent);
-
-        ArrayList<Student> students = new ArrayList<>();
+// put the newStudent object onto the ArrayList
         students.add(newStudent);
 
-        //making a hash map
-        Map studentInfo = new HashMap();
-        studentInfo.put("firstName")
     }
 }
