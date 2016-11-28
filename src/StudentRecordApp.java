@@ -2,6 +2,7 @@
  * Created by humbertosandigo on 11/28/16.
  */
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class StudentRecordApp {
@@ -17,7 +18,6 @@ public class StudentRecordApp {
         int score;
 
         System.out.println("Welcome to the Student Records Application");
-//        do {
 
         System.out.println("Please input the student's first name: ");
         firstName = sc.nextLine();
@@ -35,12 +35,8 @@ public class StudentRecordApp {
         ArrayList<Student> students = new ArrayList<>();
         students.add(newStudent);
 
-//        } while (addMoreStudents.equalsIgnoreCase("y"));
-
-        //instead of hard-coding "bob", get this input from the Scanner input
-//        newStudent.firstName = "Bob";
-//        newStudent.lastName = "Bobberson";
-//        newStudent.score = 100;
-
+        //making a hash map
+        Map studentInfo = new HashMap();
+        studentInfo.put("firstName")
     }
 }
